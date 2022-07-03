@@ -1,0 +1,13 @@
+TYPO3:
+  CMS:
+    Form:
+      prototypes:
+        standard:
+          formElementsDefinition:
+            Form:
+              renderingOptions:
+                translation:
+                  translationFile:
+                    # default translation files for the frontend
+                    10: 'EXT:form/Resources/Private/Language/locallang.xlf'
+                    20: 'EXT:efrank11/Resources/Private/Language/locallang.xlff'

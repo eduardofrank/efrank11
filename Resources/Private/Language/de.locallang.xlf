@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" target-language="de" datatype="plaintext" original="messages">
+        <header>
+            <authorName>Eduardo Frank</authorName>
+            <authorEmail>edfrank@gmail.com</authorEmail>
+        </header>
+        <body>
+             <trans-unit id="contacto.element.text-1.properties.label" xml:space="preserve">
+                  <source>First Name</source>
+                  <target state="translated">Name</target>
+             </trans-unit>
+             <trans-unit id="contacto.element.text-2.properties.label" xml:space="preserve">
+                  <source>Last Name</source>
+                  <target>Familienname</target>
+             </trans-unit>
+             <trans-unit id="contacto.element.email-1.properties.label" xml:space="preserve">
+                  <source>e-mail</source>
+                  <target>e-mail</target>
+             </trans-unit>
+             <trans-unit id="contacto.element.text-3.properties.label" xml:space="preserve">
+                  <source>Subject</source>
+                  <target>Betreff</target>
+             </trans-unit>
+             <trans-unit id="contacto.element.textarea-1.properties.label" xml:space="preserve">
+                  <source>Message</source>
+                  <target>Meldung</target>
+             </trans-unit>
+             <trans-unit id="element.contacto.renderingOptions.submitButtonLabel" xml:space="preserve">
+                  <source>Submit</source>
+                  <target>Senden</target>
+             </trans-unit>
+             <trans-unit id="contacto.finisher.EmailToReceiver.subject" xml:space="preserve">
+                  <source>Message from the web.</source>
+                  <target>Meldung von der Webseite.</target>
+             </trans-unit>
+             <trans-unit id="contacto.element.statictext-1.properties.text" xml:space="preserve">
+                  <source>* Mandatory field</source>
+                  <target>* Pflichtfeld</target>
+             </trans-unit>
+        </body>
+    </file>
+</xliff>
