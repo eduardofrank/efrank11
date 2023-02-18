@@ -38,8 +38,15 @@ config.admPanel = 0
 config.contentObjectExceptionHandler = 0
 
 #### FORM CONFIGURATION ###
+<<<<<<< HEAD
 plugin.tx_form.settings.yamlConfigurations.200 = EXT:efrank11/Configuration/Yaml/CustomFormSetup.yaml
 module.tx_form.settings.yamlConfigurations.200 = EXT:efrank11/Configuration/Yaml/CustomFormSetup.yaml
+=======
+plugin.tx_form.settings.yamlConfigurations.100 = EXT:efrank11/Configuration/Yaml/FormSetup.yaml
+module.tx_form.settings.yamlConfigurations.100 = EXT:efrank11/Configuration/Yaml/FormSetup.yaml
+#plugin.tx_form.settings.yamlConfigurations.200 = EXT:efrank11/Configuration/Yaml/CustomFormSetup.yaml#
+#module.tx_form.settings.yamlConfigurations.200 = EXT:efrank11/Configuration/Yaml/CustomFormSetup.yaml#
+>>>>>>> 8a82eea45da115f14e5813af300f1fd950645bbf
 
 #### COOKIE CONSENT ###
 plugin.tx_bootstrap_package {
@@ -162,4 +169,8 @@ lib.contentElement.settings.responsiveimages.variants {
             }
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 8a82eea45da115f14e5813af300f1fd950645bbf
