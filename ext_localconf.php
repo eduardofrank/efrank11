@@ -3,7 +3,7 @@ defined('TYPO3') or die('Access denied.');
 /***************
  * Add default RTE configuration
  */
-/*$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['efrank11'] = 'EXT:efrank11/Configuration/RTE/Default.yaml';*/
+/*$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['efrank11'] = 'EXT:efrank11/Configuration/RTE/Full.yaml';*/
 
 $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['efrank11'] = 'EXT:efrank11/Configuration/RTE/MyFull.yaml';
 

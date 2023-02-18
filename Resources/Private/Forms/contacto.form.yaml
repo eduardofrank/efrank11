@@ -1,6 +1,6 @@
 
 renderingOptions:
-  submitButtonLabel: Enviar
+  submitButtonLabel: Submit
 type: Form
 identifier: contacto
 label: contacto
@@ -8,18 +8,17 @@ prototypeName: standard
 finishers:
   -
     options:
-      subject: 'Contacto desde el sitio web'
-      recipientAddress: info@eduardofrank.co
-      recipientName: 'Eduardo Frank'
-      senderAddress: '{email-1}'
-      senderName: '{text-1}  {text-2}'
-      replyToAddress: ''
-      carbonCopyAddress: ''
-      blindCarbonCopyAddress: ''
-      format: html
+      subject: '{subject}'
+      recipients:
+        info@eduardofrank.co: info
+      senderAddress: '{emailAddress}'
+      senderName: '{name}  {lastName}'
+      addHtmlPart: false
       attachUploads: true
       translation:
-        language: ''
+        language: Default
+      useFluidEmail: false
+      title: ''
     identifier: EmailToReceiver
   -
     options:
@@ -43,13 +42,15 @@ renderables:
           -
             defaultValue: ''
             type: Text
-            identifier: text-1
-            label: Nombre
+            identifier: name
+            label: Name
             properties:
-              fluidAdditionalAttributes:
-                required: required
               gridColumnClassAutoConfiguration:
                 viewPorts:
+                  xxl:
+                    numbersOfColumnsToUse: '6'
+                  xl:
+                    numbersOfColumnsToUse: '6'
                   lg:
                     numbersOfColumnsToUse: '6'
                   md:
@@ -58,19 +59,23 @@ renderables:
                     numbersOfColumnsToUse: '12'
                   xs:
                     numbersOfColumnsToUse: '12'
+              fluidAdditionalAttributes:
+                required: required
             validators:
               -
                 identifier: NotEmpty
           -
             defaultValue: ''
             type: Text
-            identifier: text-2
-            label: Apellido
+            identifier: lastName
+            label: 'Last Name'
             properties:
-              fluidAdditionalAttributes:
-                required: required
               gridColumnClassAutoConfiguration:
                 viewPorts:
+                  xxl:
+                    numbersOfColumnsToUse: '6'
+                  xl:
+                    numbersOfColumnsToUse: '6'
                   lg:
                     numbersOfColumnsToUse: '6'
                   md:
@@ -79,32 +84,23 @@ renderables:
                     numbersOfColumnsToUse: '12'
                   xs:
                     numbersOfColumnsToUse: '12'
+              fluidAdditionalAttributes:
+                required: required
             validators:
               -
                 identifier: NotEmpty
           -
             defaultValue: ''
             type: Email
-            identifier: email-1
-            label: 'Correo electrónico'
+            identifier: emailAddress
+            label: e-mail
             properties:
-              fluidAdditionalAttributes:
-                required: required
-              validationErrorMessages:
-                -
-                  code: '1221560910'
-                  message: 'Debe ser un correo electrónico válido / Valid email address required.'
-                -
-                  code: '1221560718'
-                  message: 'Debe ser un correo electrónico válido / Valid email address required.'
-                -
-                  code: '1347992400'
-                  message: 'Debe ser un correo electrónico válido / Valid email address required.'
-                -
-                  code: '1347992453'
-                  message: 'Debe ser un correo electrónico válido / Valid email address required.'
               gridColumnClassAutoConfiguration:
                 viewPorts:
+                  xxl:
+                    numbersOfColumnsToUse: '6'
+                  xl:
+                    numbersOfColumnsToUse: '6'
                   lg:
                     numbersOfColumnsToUse: '6'
                   md:
@@ -113,6 +109,8 @@ renderables:
                     numbersOfColumnsToUse: '12'
                   xs:
                     numbersOfColumnsToUse: '12'
+              fluidAdditionalAttributes:
+                required: required
             validators:
               -
                 identifier: EmailAddress
@@ -121,11 +119,15 @@ renderables:
           -
             defaultValue: ''
             type: Text
-            identifier: text-3
-            label: Asunto
+            identifier: subject
+            label: Subject
             properties:
               gridColumnClassAutoConfiguration:
                 viewPorts:
+                  xxl:
+                    numbersOfColumnsToUse: '6'
+                  xl:
+                    numbersOfColumnsToUse: '6'
                   lg:
                     numbersOfColumnsToUse: '6'
                   md:
@@ -142,11 +144,15 @@ renderables:
           -
             defaultValue: ''
             type: Textarea
-            identifier: textarea-1
-            label: Mensaje
+            identifier: message
+            label: Message
             properties:
               gridColumnClassAutoConfiguration:
                 viewPorts:
+                  xxl:
+                    numbersOfColumnsToUse: '12'
+                  xl:
+                    numbersOfColumnsToUse: '12'
                   lg:
                     numbersOfColumnsToUse: '12'
                   md:
@@ -162,7 +168,7 @@ renderables:
                 identifier: NotEmpty
           -
             properties:
-              text: '* Campo requerido'
+              text: '* Required Field'
             type: StaticText
-            identifier: statictext-1
+            identifier: mandatory
             label: ''

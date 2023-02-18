@@ -17,15 +17,25 @@ body, .body-bg {
     max-height: 65px;
 }
 
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    line-height: 0.9;
+}
+
+.postlist__posttitle, .element-header {
+    font-weight: 700 !important;
+}
+
+.element-subheader {
+    font-weight: 100;
+}
+
 .navbar-mainnavigation {
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.15);
     padding: 0;
 }
-
-/*h4, .h4 {
-    font-size: 1.25rem;
-    font-weight: 400;
-}*/
 
 pre, code, kbd, samp {
     font-family: 'Fira Mono', monospace;
@@ -128,11 +138,6 @@ time {
     grid-template-columns: 1fr;
 }
 }
-
-/*.gallery-item img, .gallery-item picture {
-    width: auto;
-    height: auto;
-}*/
 
 /*********************/
 /******* Form ********/
