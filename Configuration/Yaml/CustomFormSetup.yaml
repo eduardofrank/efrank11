@@ -1,29 +1,18 @@
 TYPO3:
   CMS:
     Form:
-<<<<<<< HEAD
       persistenceManager:
         allowSaveToExtensionPaths: true
         allowDeleteFromExtensionPaths: true
         allowedExtensionPaths: 
           200: 'EXT:efrank11/Resources/Private/Forms/'
-=======
->>>>>>> 8a82eea45da115f14e5813af300f1fd950645bbf
       prototypes:
         standard:
           formElementsDefinition:
             Form:
               renderingOptions:
                 translation:
-<<<<<<< HEAD
                   translationFiles:
                     # default translation files for the frontend
                     10: 'EXT:form/Resources/Private/Language/locallang.xlf'
                     20: 'EXT:efrank11/Resources/Private/Language/locallang.xlf'
-
-=======
-                  translationFile:
-                    # default translation files for the frontend
-                    10: 'EXT:form/Resources/Private/Language/locallang.xlf'
-                    20: 'EXT:efrank11/Resources/Private/Language/locallang.xlff'
->>>>>>> 8a82eea45da115f14e5813af300f1fd950645bbf
